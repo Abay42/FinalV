@@ -1,0 +1,441 @@
+.free-workout {
+    position: relative;
+    top: 250px;
+}
+body{
+    height: 6000px;
+}
+
+.beginnerFriendly{
+    position: relative;
+    color: white;
+    top: 35px;
+    left: 48px;
+    margin-top: 120px;
+}
+
+.beginnerFriendly .BFtext1{
+    margin-top: 30px;
+    position: relative;
+}
+
+.beginnerFriendly h1{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.beginnerFriendly p{
+    font-family: Outfit;
+    font-size: 20px;
+    font-weight: 400;
+    width: 1130px;
+}
+.beginnerFriendly .div-wrapper > *{
+    left: 15px;
+    top: 15px;
+    font-weight: 300;
+}
+
+.beginnerFriendly .div-wrapper{
+    margin-top: 30px;
+}
+
+.beginnerFriendly .BFimages{
+    display: flex;
+    gap: 100px;
+    width: 100%;
+    margin-left: 40px;
+    
+}
+.beginnerFriendly .BFimg {
+    border-radius: 75px;
+    position: relative;
+    margin-top: 20px
+    
+}
+
+.content{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.workoutPrograms{
+    position: relative;
+    margin-top: 0px;
+}
+
+.workoutPrograms .buttonOut{
+    position: relative;
+    width: 203px;
+    height: 60px;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: #ffed00;
+    justify-content: center;
+    text-align: center;
+    top: 10px;
+}
+
+.workoutPrograms .buttonOut .text{
+    position: relative;
+    top: 20px;
+    font-weight: 600;
+}
+
+.workoutPrograms .buttonOut:hover{
+    background-color: #ffed00;
+}
+
+.workoutPrograms .buttonOut:hover .text{
+    color: black;
+}
+.txt h1{
+    transform: rotate(-90deg);
+    transform-origin: 0%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,400&family=Noto+Sans:wght@200&display=swap');
+body{
+  font-family: 'Montserrat',sans-serif;
+  background-color: black;
+}
+*{
+  margin:0;
+  padding:0;
+}
+.theme{
+  color: yellow;
+}
+.header{
+  margin-left: 30px;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header img{
+  margin-left: 50px;
+}
+.navbar a{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  margin: 0 35px;
+}
+.h1{
+  color: white;
+}
+.container1{
+  display: flex;
+  justify-content: center;
+}
+.container1 .greeting{
+  color: white;
+  padding-top: 100px;
+}
+.greeting h2{
+  font-weight: 200;
+}
+.greeting h2{
+  font-size: 80px;
+}
+.greeting {
+  padding-left: 55px;
+}
+.greeting p{
+  margin-top: 50px;
+  font-size: 20px;
+  padding-right: 55px;
+}
+.right_button {
+  float: right;
+}
+button{
+  background-color: yellow;
+  margin-top: 50px;
+  width:200px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.container2{
+  position: relative;
+  margin-top:45px;
+  max-width: 1500px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0;
+}
+.txt{
+  position: absolute;
+}
+.container2 img{
+  opacity: 0.6;
+}
+.container2 p{
+  bottom: 50px;
+  top: 50%;
+  left: 50%;
+  padding: 20 px;
+  background-color: rgba(255, 255, 255, 0);
+  margin-bottom: 100px;
+  color: white;
+  transform: rotate(270deg);
+  text-align: right;
+  font-size: 35px;
+}
+.allProd{
+  margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.allProd h1{
+  color: yellow;
+}
+
+.allProd .right_button{
+  margin-top: 50px;
+  justify-content: flex-end;
+  text-align: center;
+  margin-right: 50px;
+}
+/* MERCH */
+.container3{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.container3 .greyRec{
+  margin-top: 200px;
+}
+.container3 .greyRec h1{
+  color: white;
+}
+.me_txt{
+  position: absolute;
+  margin: 80px 115px;
+}
+.bag{
+  width: 300px;
+  position: absolute;
+}
+.bag1{
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 95px;
+  position: absolute;
+}
+.bag2{
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 200px;
+  position: absolute;
+}
+
+
+/* GALLERY */
+.container4{
+  margin-left: 20px;
+  margin-top: 80px;
+}
+.gallery{
+  border-radius: 25px;
+  margin: 0 15px;
+  margin-top: 15px;
+}
+/* CONTANCT */
+.contactUs{
+  margin: 150px 50px;
+}
+
+.contactUs p{
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+}
+
+
+/* CONTACT  */
+.contactUs{
+  margin: 150px 50px;
+}
+
+.contactUs p{
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+}
+.btn {
+  display: inline-flex;
+  width: 100%;
+}
+
+#form-submit {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  background: black;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+
+.section-heading h4 {
+  line-height: 40px;
+  font-size: 28px;
+  font-weight: 900;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+input, textarea {
+  width: 350px;
+  position: relative;
+  display: block;
+  background-color: #f4f7fb;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  box-shadow: none;
+  border-radius: 5px;
+  outline-color: #9e9e9e;
+}
+
+input {
+  height: 40px;
+  padding: 0px 15px;
+}
+
+textarea {
+  min-height: 140px;
+  max-height: 180px;
+  padding: 15px;
+}
+
+.btn {
+  display: inline-flex;
+  width: 100%;
+}
+
+#form-submit {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  background: black;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+
+/* END */
+.container6{
+  display: flex;
+  align-items: center;
+}
+.firstRow .img4{
+  margin-left: 80px;
+}
+
+/* CONTENT */
+.content{
+  margin: 200px 50px;
+}
+
+.content h1{
+  color: #F7F7F7;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+}
+
+.card_img{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards{
+  margin-top: 50px;
+  background-image: linear-gradient(rgba(0,0,0,0.78),rgba(0,0,0,0.78)), url("../img/img1.png") ;
+  width: 250px;
+  height: 500px;
+  background-size: cover;
+  background-position: cover;
+}
+.cards2{
+  margin-top: 50px;
+  background-image: linear-gradient(rgba(0,0,0,0.78),rgba(0,0,0,0.78)), url("../img/img2.png") ;
+  width: 250px;
+  height: 500px;
+  background-size: cover;
+  background-position: cover;
+}
+.cards3{
+  margin-top: 50px;
+  background-image: linear-gradient(rgba(0,0,0,0.78),rgba(0,0,0,0.78)), url("../img/img3.png") ;
+  width: 250px;
+  height: 500px;
+  background-size: cover;
+  background-position: cover;
+}
+.cards4{
+  margin-top: 50px;
+  background-image: linear-gradient(rgba(0,0,0,0.78),rgba(0,0,0,0.78)), url("../img/gygygygygyg.jpg") ;
+  width: 250px;
+  height: 500px;
+  background-size: cover;
+  background-position: cover;
+}
+.txt{
+  margin-top: 400px;
+  margin-left:100px;
+}
+.card_img h1{
+  transform: rotate(-90deg); 
+  transform-origin: 0 0;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn h1{
+  font-size: 16px;
+  color: black;
+}
+
+.btn button:hover{
+  background: white;
+  border: yellow;
+  transition: 0.5s ease-in-out;
+}
+
+.btn_main h1{
+color: black;
+font-family: Adobe Garamond Pro;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 2px;
+font-size: 25px;
+}
+.gymphoto img {
+  margin-top: 50px;
+  margin-right: 50px;
+  border-radius: 25px;
+}
+
+/* Merch */

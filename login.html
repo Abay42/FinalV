@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Log In</title>
+    <link rel="stylesheet" href="style/log.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="img/gold_s_gym_2008-logo-5B7A8ECB44-seeklogo 1 (1).png" rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body style="background-color: black;" class="w-100">
+    <div class="container text-center mt-5">
+        <h2 class="mb-4 text-white">Log In</h2>
+        <img src="img/gold_s_gym_2008-logo-5B7A8ECB44-seeklogo 1.png" alt="Gym Logo" class="mb-4" width="150">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-md text-danger"></small>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <small id="passwordHelp" class="form-text text-md text-danger"></small>
+                    </div> 
+                    <a href="signup.html">Don't have account?</a>
+                    <br>
+                    <button type="submit" class="btn btn-warning btn-rounded btn-xs my-5" id="submitBtn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
+    const emailHelp = document.getElementById('emailHelp');
+    const passwordHelp = document.getElementById('passwordHelp');
+
+    let valid = true;
+
+    if (!validateEmail(emailInput.value)) {
+        emailHelp.textContent = 'Invalid email format. Please enter a valid email address.';
+        emailHelp.style.display = 'block';
+        valid = false;
+    } else {
+        emailHelp.style.display = 'none';
+    }
+
+    if (passwordInput.value.length < 8) {
+        passwordHelp.textContent = 'Password must be at least 8 characters long.';
+        passwordHelp.style.display = 'block';
+        valid = false;
+    } else {
+        passwordHelp.style.display = 'none';
+    }
+
+    if (valid) {
+        const adminEmail = 'admin@mail.ru';
+        const adminPassword = 'admin2023';
+
+        if (emailInput.value === adminEmail && passwordInput.value === adminPassword) {
+            window.location.href = 'admincopy.html';
+            return;
+        } else {
+            const storedEmail = localStorage.getItem('userEmail');
+            const storedPassword = localStorage.getItem('userPassword');
+            
+            if (emailInput.value === storedEmail && passwordInput.value === storedPassword) {
+                window.location.href = 'index.html';
+            } else {
+                alert("Your credentials are correct, but you are not in our localStorage");
+                window.location.href = 'signUp.html';
+            }
+        }
+    }
+});
+function validateEmail(email) {
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailRegex.test(email);
+}
+    </script>
+
+</body>
+</html>
